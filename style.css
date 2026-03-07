@@ -1,0 +1,1413 @@
+* {
+    /*margin-inline: auto;*/
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'poppins', sans-serif;
+
+}
+
+/*Topo do site*/
+header {
+    display: block;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.logo img {
+    width: 15vh;
+}
+
+header h1 {
+    padding-left: 83vh;
+    font-size: 4rem;
+    font-weight: bold;
+    /* Animação */
+    margin-top: -14vh;
+}
+
+/* Animação de movimento do gradiente */
+@keyframes animate {
+    to {
+        background-position-x: -200px;
+    }
+}
+
+
+header nav ul {
+    list-style: none;
+    display: block;
+    padding-left: 74vh;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+
+}
+
+header nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 50px;
+}
+
+header a:hover {
+    text-decoration: none;
+    color: #ff9100;
+    transition: 0.5s;
+    transform: ease-in-out(1.20);
+    /*text-shadow: #ff9100 2px;*/
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-top button {
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ff9100;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    position: absolute;
+    right: 3%;
+    bottom: 93%;
+
+}
+
+button:hover,
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #ff9100;
+    transform: scale(1.05);
+}
+
+body {
+    background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2025-05-01\ à\(s\)\ 02.30.20_36a232ed.jpg);
+    background-size: cover;
+    /* A imagem cobrirá toda a área da tela */
+    background-position: center center;
+    /* A imagem será centralizada */
+    background-attachment: fixed;
+    /* ou apenas remova essa linha */
+
+    background-repeat: no-repeat;
+    /* A imagem não se repetirá */
+    color: #ffffff;
+
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.btn-abrir-menu,
+.menu-mobile {
+    display: none;
+}
+
+/*Body do site*/
+section .txt-topo {
+    padding: 3% 50% 20% 10%;
+    background-color: #000000;
+    background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2025-05-01\ à\(s\)\ 02.30.20_36a232ed.jpg);
+    background-size: cover;
+    /* A imagem cobrirá toda a área da tela */
+    background-position: center center;
+    /* A imagem será centralizada */
+    background-attachment: fixed;
+    /* A imagem ficará fixa durante a rolagem */
+    background-repeat: no-repeat;
+    /* A imagem não se repetirá */
+
+}
+
+.txt-topo h1 {
+    font-size: 3rem;
+    padding: 80px 0 0 0;
+    white-space: nowrap;
+}
+
+@media(min-width:1020px) {
+    .txt-topo h2 {
+        font-size: 3rem;
+        margin-left: 39%;
+        margin-top: -5.4%;
+    }
+}
+
+.txt-topo h3 {
+    font-size: 3rem;
+}
+
+.txt-topo span {
+    color: #ff9100;
+    font-size: 3rem;
+
+}
+
+.txt-topo p {
+    font-size: 2rem;
+    padding: 20px 0 0 0;
+}
+
+.button {
+    top: 20px;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    border-radius: 120px;
+    overflow: hidden;
+    display: inline-block;
+    /* Impede que o botão se expanda fora de seu contorno */
+    border-style: groove;
+}
+
+.button:hover span {
+    color: #000000;
+}
+
+.button span {
+    font-size: 30px;
+    position: relative;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.button::before {
+    content: '';
+    background-color: #ff9100;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .9s, height .5s;
+}
+
+.button:hover::before {
+    width: 1000px;
+    height: 1000px;
+
+}
+
+.txt-topo .read-more {
+    display: none;
+}
+
+/*RESPONSIVIDADE FULL HD*/
+@media (min-width: 1080px) and (max-width: 1920px) {
+
+    /* ESTILOS SOMENTE PARA NOTEBOOKS */
+    * {
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .menu-desktop ul li a {
+        font-size: 1rem;
+    }
+
+    header nav ul {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 15px;
+
+    }
+
+    .btn-top button {
+        margin: -2%;
+    }
+
+    section .inicio {
+        padding: 0;
+        margin: 0;
+    }
+
+    .content {
+        max-width: 40%;
+        max-height: 50%;
+        margin-top: 50px;
+    }
+
+    .txt-topo h1 {
+        font-size: 2rem;
+        margin-top: -10%;
+    }
+
+    .txt-topo h2 {
+        font-size: 2rem;
+        margin-left: 45%;
+        margin-top: -24px;
+        line-height: 10px;
+    }
+
+    .txt-topo h3 {
+        font-size: 2rem;
+    }
+
+    .txt-topo p {
+        font-size: 1rem;
+
+    }
+
+    .txt-topo .button {
+        width: 25%;
+        height: 50px;
+    }
+
+    .button span {
+        font-size: 1rem;
+    }
+
+    .headline-sobre {
+        width: 100%;
+    }
+
+    .headline-scroll {
+        font-size: 1rem;
+        bottom: -10px;
+    }
+
+    button.prev {
+        margin-left: -5px;
+        ;
+        margin-top: -11px;
+    }
+
+    /* Botão da esquerda */
+    button.next {
+        margin-right: 10px;
+        margin-top: -11px;
+    }
+
+    .container-contato {
+        padding: 30px 20px;
+        margin-bottom: 100px;
+    }
+
+    /* outros ajustes específicos aqui... */
+}
+
+/*RESPONSIVIDADE MAC*/
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    /* ESTILOS SOMENTE PARA NOTEBOOKS */
+    header h1 {
+        font-size: 3rem;
+        margin-left: -100px;
+
+    }
+
+    .menu-desktop ul li a {
+        font-size: 1rem;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: block;
+        padding-left: 55vh;
+        margin-top: -10px;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin: 0 15px;
+
+    }
+
+    .btn-top button {
+        margin: -2%;
+    }
+
+    section .inicio {
+        padding: 100%;
+        margin: 0;
+    }
+
+    .content {
+        max-width: 40%;
+        max-height: 50%;
+        margin-top: 40px;
+    }
+
+    .txt-topo h1 {
+        font-size: 2rem;
+        margin-top: -10%;
+    }
+
+    .txt-topo h2 {
+        font-size: 2rem;
+        margin-left: 45%;
+        margin-top: -24px;
+        line-height: 10px;
+    }
+
+    .txt-topo h3 {
+        font-size: 2rem;
+    }
+
+    .txt-topo p {
+        font-size: 1rem;
+
+    }
+
+    .txt-topo .button {
+        width: 22%;
+        height: 22px;
+    }
+
+    .button span {
+        font-size: 1rem;
+    }
+
+    .headline-sobre {
+        bottom: 24px;
+        left: 1.5%;
+    }
+
+    .headline-scroll {
+        font-size: 1rem;
+    }
+
+
+    .container-contato {
+        padding: 30px 20px;
+        margin: 10px;
+    }
+
+    /* outros ajustes específicos aqui... */
+}
+
+/*PROPORÇÃO DA IMG*/
+.content {
+    height: 600px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(10%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(255, 115, 1, 0.719);
+}
+
+.slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navi {
+    position: absolute;
+    bottom: 160px;
+    left: 850px;
+    display: flex;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    transform: .5s ease;
+    border-radius: 20px;
+    display: none;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+.content input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+#slid1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slid2:checked~.s1 {
+    margin-left: -100%;
+}
+
+#slid3:checked~.s1 {
+    margin-left: -200%;
+}
+
+#slid4:checked~.s1 {
+    margin-left: -300%;
+}
+
+#slid5:checked~.s1 {
+    margin-left: -400%;
+}
+
+/*BUTTONS SOCIAL*/
+.fab-container {
+    position: fixed;
+    /* fixa o botão na tela */
+    right: 20px;
+    /* distância da borda direita */
+    bottom: 20px;
+    /* distância acima do rodapé (ajuste à vontade) */
+    z-index: 10;
+    /* garante que fique por cima de outros elementos */
+    background: transparent;
+    margin: 0;
+}
+
+.fab {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #000000, #ff9100);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.fab i {
+    font-size: 24px;
+    color: white;
+}
+
+.social-buttons {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translateY(-750%);
+    gap: 0px;
+}
+
+.social-buttons a i {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+    background: linear-gradient(135deg, #000000, #ff9100);
+    border-radius: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(255, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.social-buttons a {
+    text-decoration: none;
+}
+
+.social-buttons i {
+    align-items: center;
+    justify-content: center;
+}
+
+.social-buttons a:hover {
+    background: transparent;
+    color: transparent;
+    transform: scale(1.1);
+}
+
+.icon1 a i {
+    background: blue;
+}
+
+.icon2 a i {
+    background: linear-gradient(135deg, #a200ff, #ff00ae, #ffae00, #ff8c00);
+}
+
+.icon3 a i {
+    background: linear-gradient(500deg, rgb(255, 255, 255), rgb(0, 0, 0), white);
+}
+
+.icon4 a i {
+    background: #ff9100cc;
+}
+
+.icon5 a i {
+    background: rgb(0, 154, 0);
+}
+
+.fab-container.active .social-buttons {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*************** SOBRE *****/
+.headline-sobre {
+
+    height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+}
+
+.headline-scroll {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.headline-scroll span {
+    font-family: var(--font-grande);
+    font-size: 50px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+    /* Espaçamento entre as palavras */
+}
+
+.headline-scroll .divisor {
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-gray2);
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.headline-scroll .divisor i {
+    font-size: 1rem;
+}
+
+.headline-scroll .diviso i {
+    font-size: 1rem;
+}
+
+.headline-scroll .bold {
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.headline-scroll .light {
+    font-weight: lighter;
+    color: #ff9100;
+}
+
+/*************** SERVIÇOS *****/
+.servicos {
+    background-color: var(--color-black);
+    width: 99, 9%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem 1rem;
+    background-image: url(img/Imagem\ do\ WhatsApp\ 2\ de\ 2025-05-01\ à\(s\)\ 02.30.21_69ac5a06.jpg);
+    color: #000000;
+    background-size: cover;
+    /* A imagem cobrirá toda a área da tela */
+    background-position: center center;
+    /* A imagem será centralizada */
+    background-attachment: fixed;
+    /* A imagem ficará fixa durante a rolagem */
+    background-repeat: no-repeat;
+    /* A imagem não se repetirá */
+
+}
+
+.container-servicos {
+    background-color: var(--color-white);
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30vh;
+
+}
+
+.headline-servicos {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-servicos {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.titulo-servicos h1 {
+    color: var(--color-black);
+    width: 50%;
+    font-size: 8vw;
+    font-weight: lighter;
+    font-family: var(--font-grande);
+}
+
+.descricao-servicos {
+    width: 50%;
+    font-size: 2rem;
+    text-align: right;
+    line-height: 1.4;
+    letter-spacing: 1.5px;
+}
+
+.servicos-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.card-servicos {
+    border: 1px solid hsl(0, 0%, 0%);
+    max-width: 95%;
+    min-height: 180px;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    animation: appearRight 10ms ease-in-out;
+    animation-timeline: view();
+}
+
+@keyframes appearRight {
+    from {
+        opacity: 0;
+        translate: -30vh 0;
+    }
+
+    to {
+        opacity: 10;
+        translate: 0 0;
+    }
+}
+
+.card-servicos-left {
+    margin-left: 5%;
+    border: 1px solid hsl(0, 0%, 0%);
+    color: #ff9100;
+    width: 95%;
+    min-height: 180px;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 7%;
+    animation: appearLeft 10ms alternate-reverse;
+    animation-timeline: view();
+}
+
+@keyframes appearLeft {
+    from {
+        opacity: 0;
+        translate: -20vh 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+.card-titulo {
+    width: 68%;
+    font-size: clamp(0.8rem, 2.5vw + .4rem, 2rem);
+    font-family: var(--font-pequena);
+    font-weight: normal;
+
+
+}
+
+.card-icon img {
+    width: 64%;
+}
+
+.card-icon {
+    width: 25%;
+    max-width: 120px;
+    height: 60px;
+    border: 1px solid hsl(0, 0%, 0%);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*SKILLS*/
+.skills {
+    width: 98%;
+    padding: 7rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(img/Imagem\ do\ WhatsApp\ de\ 2025-05-01\ à\(s\)\ 02.30.20_36a232ed.jpg);
+    color: #ffffff;
+    background-size: cover;
+    /* A imagem cobrirá toda a área da tela */
+    background-position: center center;
+    /* A imagem será centralizada */
+    background-attachment: fixed;
+    /* A imagem ficará fixa durante a rolagem */
+    background-repeat: no-repeat;
+    /* A imagem não se repetirá */
+
+}
+
+.skills img {
+    width: 450px;
+    margin-left: 4vh;
+}
+
+/*.skills img{
+position: relative;
+animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+0% {
+    top: 0;
+}
+
+100% {
+    top: 15px;
+}
+}*/
+.container-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headline-skills {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-headline-skills h2 {
+    font-family: var(--font-grande);
+    font-size: 3rem;
+}
+
+.text-headline-skills h2 span {
+    color: #ff9100;
+}
+
+.text-headline-skills p {
+    font-size: 1.5rem;
+    color: var(--color-gray2);
+    font-weight: 500;
+    line-height: 1.4;
+    max-width: 900px;
+}
+
+.conteudo-skills {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+}
+
+.box-skill {
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.box-skill i {
+    font-size: 4rem;
+    color: var(--color-white);
+}
+
+.box-skill h3 {
+    font-size: 1.8rem;
+    color: #ff9100;
+}
+
+.box-skill p {
+    color: var(--color-gray2);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.box-skills {
+    border: 1px solid hsl(26, 100%, 50%);
+    border-radius: 20px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.box-skills i {
+    font-size: 4rem;
+    color: var(--color-white);
+}
+
+.box-skills h3 {
+    font-size: 1.8rem;
+    color: #ff9100;
+}
+
+.box-skills p {
+    color: var(--color-gray2);
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+@media (min-width: 600px) {
+    .conteudo-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .conteudo-skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Estilo do contêiner principal */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Ocultar as opções de radio */
+input[type="radio"] {
+    display: none;
+}
+
+/* Estilo das imagens (slides) */
+.slides-skills {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide-skills {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide-skills img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+/* Estilos dos botões de navegação */
+button.prev,
+button.next {
+    /* Posiciona os botões por cima das imagens */
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background-color: #000000;
+    /* Fundo semi-transparente */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    /* Fica acima das imagens */
+}
+
+button.prev {
+    left: 10px;
+    ;
+}
+
+/* Botão da esquerda */
+button.next {
+    right: 20px;
+}
+
+/* Controle de navegação */
+.navigation {
+
+    margin-top: 3rem;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+/*ESTILO OLINHAS DE BAR NAVIGATION
+/* Cada slide será mostrado com base no input radio selecionado 
+#slide1:checked~.slides-skills {
+    transform: translateX(0%);
+}
+
+#slide2:checked~.slides-skills {
+    transform: translateX(-100%);
+}
+
+#slide3:checked~.slides-skills {
+    transform: translateX(-200%);
+}
+
+/* Estilo para o slide ativo 
+#slide1:checked~.navigation label:nth-child(1),
+#slide2:checked~.navigation label:nth-child(2),
+#slide3:checked~.navigation label:nth-child(3) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Cada slide será mostrado com base no input radio selecionado 2 
+#slide4:checked~.slides-skills {
+    transform: translateX(0%);
+}
+
+#slide5:checked~.slides-skills {
+    transform: translateX(-100%);
+}
+
+#slide6:checked~.slides-skills {
+    transform: translateX(-200%);
+}
+
+/* Estilo para o slide ativo 
+#slide1:checked~.navigation label:nth-child(4),
+#slide2:checked~.navigation label:nth-child(5),
+#slide3:checked~.navigation label:nth-child(6) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Cada slide será mostrado com base no input radio selecionado 3 
+#slide7:checked~.slides-skills {
+    transform: translateX(0%);
+}
+
+#slide8:checked~.slides-skills {
+    transform: translateX(-100%);
+}
+
+#slide9:checked~.slides-skills {
+    transform: translateX(-200%);
+}
+
+/* Estilo para o slide ativo 
+#slide1:checked~.navigation label:nth-child(7),
+#slide2:checked~.navigation label:nth-child(8),
+#slide3:checked~.navigation label:nth-child(9) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Cada slide será mostrado com base no input radio selecionado 4 
+#slide10:checked~.slides-skills {
+    transform: translateX(0%);
+}
+
+#slide11:checked~.slides-skills {
+    transform: translateX(-100%);
+}
+
+#slide12:checked~.slides-skills {
+    transform: translateX(-200%);
+}
+
+/* Estilo para o slide ativo 
+#slide1:checked~.navigation label:nth-child(10),
+#slide2:checked~.navigation label:nth-child(11),
+#slide3:checked~.navigation label:nth-child(12) {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/*************** CONTATO *****/
+.contato {
+    background-image: url(img/Imagem\ do\ WhatsApp\ 2\ de\ 2025-05-01\ à\(s\)\ 02.30.21_69ac5a06.jpg);
+    width: 99, 9%;
+    height: auto;
+    display: flex;
+    padding: 2rem 0rem 3rem 0rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    background-color: #ffffff;
+    color: #000000;
+    background-size: cover;
+    /* A imagem cobrirá toda a área da tela */
+    background-position: center center;
+    /* A imagem será centralizada */
+    background-attachment: fixed;
+    /* A imagem ficará fixa durante a rolagem */
+    background-repeat: no-repeat;
+    /* A imagem não se repetirá */
+
+}
+
+.container-contato {
+    width: 100%;
+    height: 100vh;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headline-contato {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-contato {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.titulo-contato h1 {
+    color: var(--color-black);
+    width: 50%;
+    font-size: 8vw;
+    font-weight: lighter;
+    font-family: var(--font-grande);
+}
+
+.descricao-contato {
+    width: 50%;
+    text-align: right;
+
+}
+
+.descricao-contato a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.descricao-contato ul li {
+    list-style: none;
+}
+
+.conteudo-contato {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.formulario-contato {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.formulario-contato h2 {
+    font-size: 2rem;
+}
+
+.formulario-contato p {
+    font-size: 1.5rem;
+    color: var(--color-gray1);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.form input {
+    font-family: var(--font-pequena);
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+.form textarea {
+    width: 100%;
+    height: 20%;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    font-family: var(--font-pequena);
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
+}
+
+.btn-enviar {
+    background-color: var(--color-destaque1);
+    color: var(--color-black);
+    font-weight: bold;
+    width: 190px;
+    padding: 1rem 0rem;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    outline: none;
+    border-radius: 30px;
+}
+
+.logo-contato {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.logo-contato img {
+    width: 100%;
+    border-radius: 36px;
+    box-shadow: 0 0 10px black;
+    height: 55%;
+}
+
+/*************** FOOTER *****/
+.footer {
+    background-color: #000000;
+    width: 98.5%;
+    padding: 3rem 1rem;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.container-footer {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-column {
+    align-items: flex-start;
+}
+
+.logo-column img {
+    width: 100px;
+}
+
+.menu-column {
+    text-align: center;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+}
+
+.footer-nav a:hover {
+    color: var(--color-destaque1);
+}
+
+.social-column {
+    text-align: right;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 0.5rem;
+}
+
+.social-links a:hover {
+    color: var(--color-destaque1);
+}
+
+.credits-column {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.credits-column p {
+    margin: 0.2rem 0;
+}
+
+.fixed-button {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    cursor: pointer;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s ease, box-shadow 0.5s ease;
+}
+
+#backToTop {
+    bottom: 20px;
+    left: 20px;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255);
+    background: linear-gradient(135deg, #000000, #ff9100);
+}
+
+#whatsappButton {
+    display: none;
+}
+
+#whatsappButton i {
+    display: none;
+}
+
+.fixed-button i {
+    font-size: 24px;
+}

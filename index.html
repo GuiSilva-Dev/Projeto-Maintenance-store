@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ff7b0094">
+
+    <title>Hdmr Ar</title>
+    <link rel="icon" href="img/2-Photoroom (2).png">
+    <!--Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+        integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+
+</head>
+<header>
+    <div id="topo" class="logo">
+        <img src="img/5-Photoroom.png" alt="LOGOTIPO">
+    </div><!-- fim logo-->
+    <div class="topo">
+        <h1>HDMR AR</h1>
+    </div><!-- fim h1-->
+    <div class="menu-desktop">
+        <nav class="menu-topo">
+            <ul class="nav-menu">
+                <li><a href="#topo">INÍCIO</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#skills">SOBRE A EMPRESA</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="btn-top">
+            <a href="mailto:marcelosardinha2021@gmail.com" target="_blank"><button>CONTATO</button></a>
+        </div><!-- fim botao-->
+    </div><!-- fim menu-desktop-->
+
+    <div class="btn-abrir-menu" id="btn">
+        <i class="bi bi-list"></i>
+    </div>
+    <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+        </div><!--btn fechar-->
+
+        <nav>
+            <ul>
+                <li><a href="#topo">INÍCIO</a></li>
+                <li><a href="#servicos">SERVIÇOS</a></li>
+                <li><a href="#skills">SOBRE A EMPRESA</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+        </nav>
+        <div class="img-menu">
+            <img src="img/2-Photoroom (2).png" alt="">
+        </div>
+    </div><!--menu mobile-->
+    <div class="overlay-menu" id="overlay-menu"></div>
+</header>
+
+<body>
+    <!--Botão voltar ao topo-->
+    <div id="backToTop" class="fixed-button">
+        <i class="bi bi-chevron-up"></i>
+    </div>
+    <!--Botão WhatsApp-->
+    <div id="whatsappButton" class="fixed-button">
+        <i class="bi bi-whatsapp"></i>
+    </div>
+
+    <section id="inicio" class="topo-site">
+        <div class="fab-container">
+            <button class="fab" onclick="toggleMenu()">
+                <i class="bi bi-menu-button-wide"></i>
+
+                <div class="social-buttons">
+                    <div class="icon1"><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></div>
+                    <div class="icon2"><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></div>
+                    <div class="icon3"> <a href="#" target="_blank"><i class="bi bi-tiktok"></i></a></div>
+                    <div class="icon4"><a href="#" target="_blank"><i class="bi bi-camera-reels"></i></a></div>
+                    <div class="icon5"><a href="http://wa.me/+5511970314324" target="_blank"><i
+                                class="bi bi-whatsapp"></i></a></div>
+                </div>
+            </button>
+        </div>
+        <!--Slide Sobre-->
+        <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
+            <div class="headline-scroll" id="headline-scroll">
+                <span class="bold">Assistência</span>
+                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
+                <span class="light">Técnica</span>
+                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
+                <span class="bold"> Assistência</span>
+                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
+                <span class="light">Técnica</span>
+                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
+                <span class="bold">Assistência</span>
+                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
+                <span class="light">Técnica</span>
+                <span class="diviso"><i class="bi bi-circle-fill"></i></span>
+            </div>
+        </div>
+
+        <div class="interface">
+            <div class="flex">
+                <div class="txt-topo">
+                    <h1>Conserto rápido,<h2>eficiente e com</h2>
+                        <h3>qualidade garantida<span>.</span></h3>
+                    </h1>
+                    <p class="post-summary">Bem-vindo ao nosso serviço especializado em manutenção e reparo!.</p>
+                    <p class="post-content">Com mais de 10 anos de experiência no mercado, sou um profissional dedicado
+                        e qualificado, especializado em consertos de eletrodomésticos. Sempre oferecendo soluções
+                        rápidas, seguras e eficientes.</p>
+
+                    <a class="button" href="http://wa.me/+5511970314324" target="_blank"><span>Fale Comigo
+                            <i>&rarr;</i></span></a>
+
+                </div><!-- fim txt-topo-->
+            </div><!-- fim flex-->
+        </div><!-- fim interface-->
+
+        <div class="content">
+            <div class="slides">
+                <input class="input" type="radio" name="slid" id="slid1" checked>
+                <input class="input" type="radio" name="slid" id="slid2">
+                <input class="input" type="radio" name="slid" id="slid3">
+                <input class="input" type="radio" name="slid" id="slid4">
+                <input class="input" type="radio" name="slid" id="slid5">
+
+                <div class="slide s1">
+                    <img src="img/img-conserto-geladeira.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/Empresa-de-Conserto-de-Ar-Condicionado-em-Sao-Paulo.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/manutencao-Maquina-de-Lavar.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/depositphotos_138897782-stock-photo-electrician-checking-television.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/images.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="navi">
+            <label class="bar" for="slid1"></label>
+            <label class="bar" for="slid2"></label>
+            <label class="bar" for="slid3"></label>
+            <label class="bar" for="slid4"></label>
+            <label class="bar" for="slid5"></label>
+        </div>
+    </section>
+    <!--Serviços-->
+    <section id="servicos" class="servicos">
+        <div class="container-servicos">
+            <div class="headline-servicos" data-aos="fade-up" data-aos-duration="1000">
+                <div class="titulo-servicos">
+                    <h1>Serviços</h1>
+                </div>
+                <div class="descricao-servicos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <!--<p>Com uma abordagem ética e estratégica, ato com dedicação e expertise para proteger os direitos dos meus clientes, oferecendo soluções jurídicas personalizadas e práticas em todas as fases</p> -->
+                </div>
+            </div>
+            <div class="servicos-cards">
+                <!--Serviço 1-->
+                <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                    <div class="card-titulo">
+                        <h1>Conserto de Máquinas de Lavar.</h1>
+                    </div>
+                    <div class="card-icon"><img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.jpg" alt=""></div>
+                </div>
+                <!--Serviço 2-->
+                <div class="card-servicos" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card-titulo">
+                        <h1>Conserto de Geladeiras.</h1>
+                    </div>
+                    <div class="card-icon"><img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.jpg" alt=""></div>
+                </div>
+                <!--Serviço 3-->
+                <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                    <div class="card-titulo">
+                        <h1>Conserto de Micro-Ondas.</h1>
+                    </div>
+                    <div class="card-icon"><img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.jpg" alt=""></div>
+                </div>
+                <!--Serviço 4-->
+                <div class="card-servicos" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="card-titulo">
+                        <h1>Conserto de Ar-Condicionado.</h1>
+                    </div>
+                    <div class="card-icon"><img src="img/27693-1.png" alt=""></div>
+                </div>
+                <!--Serviço 5-->
+                <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
+                    <div class="card-titulo">
+                        <h1>Conserto de Televisões.</h1>
+                    </div>
+                    <div class="card-icon"><img src="img/tela-de-tv-realista-painel-de-lcd-de-televisao-moderna-com-partida-de-futebol_97886-737.jpg" alt=""></i></div>
+                </div>
+                <!--Serviço 6-->
+                <div class="card-servicos" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+                    <div class="card-titulo">
+                        <h1>Conserto de Aparelhos de Som.</h1>
+                    </div>
+                    <div class="card-icon"><img src="img/745_02.webp" alt=""></div>
+                </div>
+            </div>
+        </div>
+       <!-- <div class="box-servicos">
+            <div class="box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 1">
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp" alt="">
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="">
+            </div>
+            <div class="box" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <img src="img/27693-1.png" alt="">
+            </div>-->
+    </section>
+    <!--Fim Serviços-->
+    <!--Skills-->
+    <section id="skills" class="skills">
+        <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
+            <div class="headline-skills">
+                <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <h2>Sobre a <span>Empresa</span></h2>
+                    <p>Não contrate outra empresa sem fazer um orçamento conosco, temos o melhor custo benefício para
+                        você!.</p>
+                </div>
+            </div>
+            <div class="conteudo-skills">
+                <div class="slider">
+                    <button
+                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <div class="slides-skills">
+                        <div class="slide-skills">
+                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
+                                alt="Imagem 1">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3">
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                    <!-- Navegação 2 -->
+                </div>
+
+                <div class="slider">
+                    <button
+                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <div class="slides-skills">
+                        <div class="slide-skills">
+                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
+                                alt="Imagem 1">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3">
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+
+                <div class="slider">
+                    <button
+                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <div class="slides-skills">
+                        <div class="slide-skills">
+                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
+                                alt="Imagem 1">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3">
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+                <div class="slider">
+                    <button
+                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <div class="slides-skills">
+                        <div class="slide-skills">
+                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
+                                alt="Imagem 1">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3">
+                        </div>
+                    </div>
+                    <button class="next">&#10095;</button>
+                </div>
+
+                <div class="box-skill" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <h3>Serviços</h3>
+                    <p>
+                        Todos os serviços são executados somente com a autorização do proprietário ou pessoa autorizada,
+                        mediante assinatura da ordem de serviço.</p>
+                </div>
+                <div class="box-skill" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h3>Orçamento</h3>
+                    <p>Serão feitos no local de visita. Será cobrada taxa de devolução de produtos retirados para
+                        diagnósticos no caso de reprovação do orçamento. O valor cobrado depende do aparelho ou defeito.
+                    </p>
+                </div>
+                <div class="box-skill" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <h3>Garantia dos Serviços</h3>
+                    <p>A garantia será relativa ao serviço e às peças substituídas. A cobertura será para as peças e os
+                        serviços executados. O tempo de garantia mínima é de três meses e o máximo, de 6 meses.</p>
+                </div>
+                <div class="box-skill" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <h3>Processo de entrega</h3>
+                    <p>Todo produto será entregue mediante pagamento dos serviços executados. Na falta do pagamento, o
+                        produto retornará para empresa e será adicionado custo de frete para uma nova entrega.</p>
+                </div>
+                <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                    <h3>PASSO 1.</h3>
+                    <p>Preencha o formulário de solicitação de serviço com seus dados ou entre em contato pelo WhatsApp.</p>
+                </div>
+                <div class="box-skills" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h3>PASSO 2.</h3>
+                    <p>Nós entramos em contato para levantar mais detalhes sobre o conserto e fazer o agendamento da
+                        visita técnica.</p>
+                </div>
+                <div class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                    <h3>PASSO 3.</h3>
+                    <p>Você recebe o orçamento do serviço e se aprovado, já agenda o conserto.</p>
+                </div>
+                <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <h3>PASSO 4.</h3>
+                    <p>Realização do conserto e recebimento de pagamento.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Fim Skills-->
+
+    <!--Contato-->
+    <section id="contato" class="contato">
+        <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
+            <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
+                <div class="titulo-contato">
+                    <h1>Contato</h1>
+                </div>
+                <div class="descricao-contato">
+                    <ul class="lista-contato">
+                        <li><a href="#">WhatsApp: (55) 11 97031-4324</a></li>
+                        <li><a href="#">marcelosardinha2021@gmail.com</a></li>
+                        <li><a href="#">Atendemos todos os dias</a></li>
+                        <!--<li><a href="#">Endereço Completo</a></li>-->
+                    </ul>
+                </div>
+            </div>
+            <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="400">
+                <div class="formulario-contato">
+                    <h2>Entre em contato</h2>
+                    <p>Precisa de manutenção para o seu equipamento ou sistema? A Hdmr Ar está pronta para ajudar! Preencha o
+                        formulário abaixo com as informações necessárias e nossa equipe entrará em contato para fornecer
+                        o suporte que você precisa.!</p>
+                    <form class="form" action="https://formsubmit.co/Guilherme.lsp10@gmail.com" method="POST"
+                        target="_blank" />
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+                    <input type="phone" name="telefone" id="telefone" placeholder="(11) 22222-2222">
+                    <input type="email" name="email" id="email" placeholder="Seu melhor email">
+                    <textarea name="mensagem" id="mensagem" placeholder="Descreva o seu caso aqui..."></textarea>
+                    <button class="btn-enviar" target="_blank">Enviar</button>
+                    </form>
+                </div>
+                <div class="logo-contato" data-aos="fade-up" data-aos-delay="600">
+                    <img src="img/quanto-custa-conserto-maquina-de-lavar.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fim Contato-->
+
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <div class="container-footer">
+            <div class="footer-column logo-column">
+                <img src="img/5-Photoroom.png" alt="">
+            </div>
+            <div class="footer-column menu-column">
+                <nav class="footer-nav">
+                    <a href="#topo">Início</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#skills">Sobre a Empresa</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </div>
+            <div class="footer-column social-column">
+                <ul class="social-links">
+                   <!--<li><a href="#"><i class="bi bi-instagram" target="_blank"></i> Instagram</a></li>
+                    <li><a href="#"><i class="bi bi-camera-reels" target="_blank"></i>Kwai</a></li>
+                    <li><a href="#"><i class="bi bi-facebook" target="_blank"></i> Facebook</a></li>
+                    <li><a href="#"><i class="bi bi-tiktok" target="_blank"></i> TikTok</a></li>-->
+                    <li><a href="#"><i class="bi bi-geo-alt"></i>Itapevi-Sp </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-column credits-column">
+            <p>&copy; 2025 Todos os direitos reservados.</p>
+            <p>Desenvolvido por GS│Dev.</p>
+        </div>
+    </footer>
+    <!--Fim Footer-->
+    <script src="button.js"></script>
+    <script src="WhattsBt.js"></script>
+    <script src="SlideSobre.js"></script>
+    <script src="btmobile.js"></script>
+    <script src="rolagem.js"></script>
+
+</body>
+
+</html>

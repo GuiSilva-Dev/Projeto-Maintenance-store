@@ -1,0 +1,690 @@
+@media (max-width: 1024px) {
+
+    * {
+        box-sizing: border-box;
+        /*CONTEUDO NAO VAZA DA TELA*/
+        padding: 0;
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        /*outline: 1px solid red;*/
+    }
+
+
+
+    /*menu para aparecer no mobile*/
+    .nav-mobile {
+        display: inline-block;
+    }
+
+    .btn-abrir-menu,
+    .menu-mobile {
+        display: inline-block;
+    }
+
+    .btn-abrir-menu i {
+        color: #ff9100;
+        font-size: 40px;
+        position: fixed;
+        margin-top: -90px;
+        margin-left: 2%;
+        z-index: 1;
+    }
+
+    .btn-abrir-menu {
+        margin-left: 92%;
+        margin-top: -20%;
+    }
+
+    .menu-mobile {
+        background-color: #000000;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 999999;
+        /*sobrepõe itens de valores menores*/
+        width: 0%;
+        overflow: hidden;
+        transition: .2s;
+    }
+
+    .menu-mobile.abrir-menu {
+        width: 70%;
+    }
+
+    .menu-mobile.btn-abrir-menu~.overlay-menu {
+        display: block;
+    }
+
+    .menu-mobile .btn-fechar i {
+        color: #ff9100;
+        font-size: 30px;
+    }
+
+    .menu-mobile .btn-fechar {
+        padding: 20px 5%;
+    }
+
+
+    .menu-mobile nav ul li a {
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .menu-mobile nav ul {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 300;
+        padding: 20px 5%;
+
+    }
+
+    .menu-mobile nav ul li a:hover {
+        background-color: #ff9100;
+        color: #000000;
+    }
+
+    .overlay-menu {
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 8888;
+        display: none;
+
+    }
+
+    .img-menu {
+        position: absolute;
+        width: 35%;
+        right: 80px;
+        /* distância da borda direita */
+        bottom: 20px;
+        /* distância acima do rodapé (ajuste à vontade) */
+        z-index: 10;
+        /* garante que fique por cima de outros elementos */
+        background: transparent;
+        margin: 0;
+    }
+
+    .menu-desktop,
+    .btn-top {
+        display: none;
+    }
+
+    body {
+        background-color: #000000;
+        background-image: none;
+    }
+
+    section .txt-topo {
+        background-color: #000000;
+        background-image: none;
+    }
+
+    .skills {
+        background-color: #000000;
+        background-image: none;
+    }
+
+    .servicos {
+        background-color: #fff;
+        background-image: none;
+    }
+
+    .contato {
+        background-color: #fff;
+        background-image: none;
+    }
+
+    .topo h1 {
+
+        display: none;
+    }
+
+    .logo img {
+        margin-left: -40px;
+        margin-top: -20px;
+        width: 30%;
+    }
+
+    /*SLIDE TOPO*/
+    .content {
+        width: 80%;
+        height: 45%;
+        position: absolute;
+        top: 370px;
+        left: 9px;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* ou 'contain' dependendo do efeito desejado */
+        display: block;
+        /*remove espaçamento indesejado abaixo da imagem*/
+    }
+
+    .txt-topo {
+        display: inline;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .txt-topo h1 {
+        margin-top: 20rem;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+
+    }
+
+    .txt-topo h2 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+
+    }
+
+    .txt-topo h3 {
+
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+
+    }
+
+    .button {
+        background-color: #ff9100;
+        padding: 10px 100px;
+        margin-left: 37%;
+        margin-top: 211%;
+        /*DISTANCE MARGIN BELLOW*/
+        margin-bottom: 50%;
+        font-size: 50px;
+
+    }
+
+    .txt-topo span {
+        color: black;
+        font-size: 1.6rem;
+        padding: 0;
+        right: 95px;
+        white-space: nowrap;
+        bottom: 10px;
+    }
+
+    .txt-topo a i {
+        font-size: 33px;
+
+    }
+
+    .txt-topo .post-summary {
+        font-size: 20px;
+        word-spacing: 0px;
+        align-items: center;
+        text-align: auto;
+        /* Transforma o texto para maiúsculas */
+        display: flex;
+        position: absolute;
+
+    }
+
+    .txt-topo button {
+        background-color: rgb(0, 0, 0);
+        transform: scale(1.05);
+        box-shadow: 0 0 10px #000000;
+        border-radius: 10px;
+    }
+
+    .txt-topo .post-content {
+        font-size: 20px;
+        /* O conteúdo ficará oculto inicialmente */
+        margin-top: 9vh;
+        margin-bottom: -80%;
+        text-align: left;
+        position: absolute;
+    }
+
+    /*ROLAGEM HORIZONTAL*/
+
+    .headline-sobre {
+        position: absolute;
+        height: 175%;
+        width: 100vw;
+        overflow: hidden;
+        margin-top: 74%;
+
+
+    }
+
+    .headline-scroll {
+        display: flex;
+        /* Exibe os elementos em linha horizontal */
+        white-space: nowrap;
+        /* Impede que o conteúdo quebre para a próxima linha */
+        animation: scroll 20s linear infinite;
+        /* Aplica a animação de rolagem contínua */
+    }
+
+
+    .headline-scroll span {
+        font-family: var(--font-grande);
+        /* Usa uma fonte personalizada (deve estar definida no :root ou global) */
+        font-size: 50px;
+        /* Tamanho grande da fonte */
+        text-transform: uppercase;
+        /* Deixa todo o texto em letras maiúsculas */
+        padding-right: 50px;
+        /* Espaçamento à direita de cada palavra */
+        display: flex;
+        /* Permite alinhar verticalmente o conteúdo interno */
+        align-items: center;
+        /* Alinha o texto verticalmente ao centro */
+    }
+
+
+    .headline-scroll .divisor {
+        width: 20px;
+        /* Largura do divisor circular */
+        height: 20px;
+        /* Altura do divisor circular */
+        background-color: var(--color-gray2);
+        /* Cor de fundo (personalizável com variável CSS) */
+        border-radius: 50%;
+        /* Torna o divisor um círculo */
+        margin: 0 20px;
+        /* Espaço lateral ao redor do divisor */
+    }
+
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+            /* Começa do início (sem movimento) */
+        }
+
+        100% {
+            transform: translateX(-50%);
+            /* Move metade da largura para a esquerda (o clone começa nesse ponto) */
+        }
+    }
+
+    /* MOBILE ajuste */
+    @media (max-width: 600px) {
+        .headline-scroll span {
+            font-size: 30px;
+            /* Reduz o tamanho da fonte em telas menores */
+            padding-right: 30px;
+            /* Menos espaço entre as palavras */
+        }
+
+        .headline-scroll .divisor {
+            width: 14px;
+            /* Divisor menor no mobile */
+            height: 14px;
+            margin: 0 10px;
+            /* Menor espaçamento lateral */
+        }
+    }
+
+    .headline-scroll .bold {
+        font-weight: bold;
+        /* Deixa em negrito */
+        color: var(--color-white);
+        /* Cor branca (ou o que estiver definido na variável) */
+    }
+
+    .headline-scroll .light {
+        font-weight: lighter;
+        /* Texto mais leve (fino) */
+        color: #ff9100;
+        /* Cor laranja (ajustável) */
+    }
+
+    /*RESPONSIVIDADE PARA TALETS*/
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+        .btn-abrir-menu i {
+
+            font-size: 60px;
+        }
+
+        .menu-mobile .btn-fechar i {
+            color: #ff9100;
+            font-size: 40px;
+        }
+
+        .menu-mobile nav ul li a {
+            text-align: center;
+            flex-direction: column;
+            width: 90%;
+            font-size: 2rem;
+        }
+
+        .menu-mobile nav ul {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 300;
+            padding: 20px 5%;
+
+        }
+
+        .content {
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: 200px;
+        }
+
+        .txt-topo {
+            margin-top: 30%;
+        }
+
+        .txt-topo h1 {
+            font-size: 50px;
+        }
+
+        .txt-topo h2 {
+            font-size: 50px;
+            line-height: 100%;
+        }
+
+        .txt-topo h3 {
+            font-size: 50px;
+        }
+
+        .txt-topo .post-summary {
+            font-size: 25px;
+        }
+
+        .txt-topo .post-content {
+            font-size: 25px;
+            top: 84%;
+        }
+
+        .txt-topo .button {
+            margin-top: 100%;
+        }
+
+        .button span {
+            left: -37px;
+        }
+
+        .headline-sobre {
+            bottom: -500px;
+            left: 1%;
+        }
+
+    }
+
+    /*SEVIÇOS*/
+
+    .titulo-servicos h1 {
+        font-size: 5rem;
+    }
+
+    .card-servicos {
+        border: 1px solid hsl(0, 0%, 0%);
+        max-width: 95%;
+        min-height: 180px;
+        border-radius: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        animation: appearRight 10ms ease;
+        animation-timeline: view();
+    }
+
+    @keyframes appearRight {
+        from {
+            opacity: 0;
+            translate: -15vh 0vh;
+        }
+
+        to {
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+
+    .card-servicos-left {
+        margin-left: 5%;
+        border: 1px solid hsl(0, 0%, 0%);
+        color: #ff9100;
+        width: 95%;
+        min-height: 180px;
+        border-radius: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2rem;
+        gap: 7%;
+        animation: appearLeft 10ms alternate-reverse;
+        animation-timeline: view();
+    }
+
+    @keyframes appearLeft {
+        from {
+            opacity: 0;
+            translate: -20vh 0;
+        }
+
+        to {
+            opacity: 1;
+            translate: 0 0;
+        }
+    }
+
+    .card-icon {
+        width: 100px;
+        height: 60px;
+    }
+
+    .card-icon img {
+        width: 50px;
+    }
+
+    /*ESPECIALIDADES*/
+    .text-headline-skills h2 {
+        font-size: 40px;
+    }
+
+    .text-headline-skills p {
+        font-size: 20px;
+    }
+
+    .box-skills {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+
+    }
+
+    .box-skills h3 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*img skills*/
+    .slide-skills img {
+        padding: 0 0 0 0;
+    }
+
+    /* Estilos dos botões de navegação */
+    button.prev,
+    button.next {
+        /* Posiciona os botões por cima das imagens */
+        position: absolute;
+        top: 35%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Fundo semi-transparente */
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        font-size: 20px;
+        z-index: 1;
+        /* Fica acima das imagens */
+    }
+
+    button.prev {
+        left: 5px;
+
+    }
+
+    /* Botão da esquerda */
+    button.next {
+        right: 10px;
+    }
+
+    /* Botão da direita */
+
+    .navigation {
+        display: none
+    }
+
+
+
+    /* Seção principal de contato */
+    .contato {
+        padding: 0rem 1rem 2rem 1rem;
+        /* Espaçamento interno: top, right, bottom, left */
+
+    }
+
+    /* Container geral da área de contato */
+    .container-contato {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        height: auto;
+        /* Altura se adapta ao conteúdo */
+    }
+
+    /* Cabeçalho da seção de contato (título e descrição) */
+    .headline-contato {
+        flex-direction: column;
+        /* Organiza os filhos em coluna (precisa de display: flex para funcionar) */
+        height: auto;
+        /* Altura se ajusta ao conteúdo */
+    }
+
+    /* Container do título */
+    .titulo-contato {
+        width: 100%;
+        /* Ocupa toda a largura */
+        display: flex;
+        /* Ativa o flexbox */
+        align-items: center;
+        /* Alinha verticalmente os itens ao centro */
+        justify-content: left;
+        /* Alinha o conteúdo à esquerda */
+    }
+
+    /* Estilo do título h1 */
+    .titulo-contato h1 {
+        font-size: 6rem;
+        /* Tamanho grande para destaque */
+    }
+
+    /* Descrição que aparece abaixo ou ao lado do título */
+    .descricao-contato {
+        width: 100%;
+        /* Ocupa toda a largura */
+        text-align: right;
+        /* Alinha o texto à direita */
+        font-size: 1.4rem;
+        /* Tamanho da fonte */
+    }
+
+    /* Estilo do link dentro da descrição */
+    .descricao-contato a {
+        text-decoration: none;
+        /* Remove sublinhado do link */
+        color: var(--color-black);
+        /* Usa a cor preta definida por variável */
+        font-size: 1rem;
+        /* Tamanho da fonte do link */
+        letter-spacing: 1.5px;
+        /* Espaçamento entre letras */
+        line-height: 1.4;
+        /* Altura da linha para melhor legibilidade */
+        font-weight: bold;
+        /* Deixa o texto em negrito */
+    }
+
+    .formulario-contato p {
+        font-size: 20px;
+
+    }
+
+    /* Seção com a logo e o formulário */
+    .conteudo-contato {
+        padding-top: 2rem;
+        /* Espaçamento acima do conteúdo */
+        flex-direction: column-reverse;
+        /* Inverte a ordem: o formulário aparece antes da imagem */
+    }
+
+    /* Container da logo */
+    .logo-contato {
+        width: 100%;
+        /* Ocupa toda a largura */
+        justify-content: center;
+        /* Centraliza o conteúdo (precisa de display: flex para funcionar) */
+    }
+
+    /* Imagem da logo */
+    .logo-contato img {
+        width: 100%;
+        /* Ocupa toda a largura do container */
+        max-height: 500px;
+        /* Limita a altura máxima da imagem */
+        object-fit: cover;
+        /* Faz a imagem preencher o espaço sem distorcer */
+    }
+
+    /* Formulário de contato */
+    .formulario-contato {
+        width: 100%;
+        /* Ocupa toda a largura */
+    }
+
+    .container-footer img {
+        width: 80px;
+    }
+
+    .footer-nav {
+        align-items: center;
+        /*centraliza os itens*/
+    }
+
+    .social-links a {
+        text-wrap: nowrap;
+        margin: 50px auto;
+    }
+
+    .container-footer a {
+        font-size: 1rem;
+
+    }
+
+    .footer-column {
+        font-size: .7rem;
+    }
+}

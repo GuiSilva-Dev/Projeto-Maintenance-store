@@ -430,7 +430,7 @@
     /*SEVIÇOS*/
 
     .titulo-servicos h1 {
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .card-servicos {
@@ -491,17 +491,21 @@
         height: 60px;
     }
 
+    .card-titulo {
+        font-size: 0.6rem;
+    }
+
     .card-icon img {
         width: 50px;
     }
 
     /*ESPECIALIDADES*/
     .text-headline-skills h2 {
-        font-size: 40px;
+        font-size: 2rem;
     }
 
     .text-headline-skills p {
-        font-size: 20px;
+        font-size: 0.95rem;
     }
 
     .box-skills {
@@ -545,23 +549,19 @@
 
     button.prev {
         left: 5px;
-
     }
 
     /* Botão da esquerda */
     button.next {
-        right: 10px;
+        right: 16px;
     }
 
     /* Botão da direita */
-
     .navigation {
         display: none
     }
 
-
-
-    /* Seção principal de contato */
+    /** Seção principal de contato **/
     .contato {
         padding: 0rem 1rem 2rem 1rem;
         /* Espaçamento interno: top, right, bottom, left */
@@ -598,8 +598,9 @@
 
     /* Estilo do título h1 */
     .titulo-contato h1 {
-        font-size: 6rem;
-        /* Tamanho grande para destaque */
+        font-size: 3rem;
+        /* Tamanho padrão para destaque */
+        padding: 10px 0 20px;
     }
 
     /* Descrição que aparece abaixo ou ao lado do título */
@@ -608,7 +609,7 @@
         /* Ocupa toda a largura */
         text-align: right;
         /* Alinha o texto à direita */
-        font-size: 1.4rem;
+        font-size: 1rem;
         /* Tamanho da fonte */
     }
 
@@ -629,7 +630,7 @@
     }
 
     .formulario-contato p {
-        font-size: 20px;
+        font-size: 1rem;
 
     }
 

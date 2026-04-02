@@ -265,9 +265,9 @@ section .txt-topo {
 
     .txt-topo h2 {
         font-size: 2rem;
-        margin-left: 45%;
         margin-top: -24px;
         line-height: 10px;
+        margin-left: 14vw;
     }
 
     .txt-topo h3 {
@@ -298,14 +298,14 @@ section .txt-topo {
     }
 
     button.prev {
-        margin-left: -5px;
+        margin-left: 0px;
         ;
         margin-top: -11px;
     }
 
     /* Botão da esquerda */
     button.next {
-        margin-right: 10px;
+        margin-right: 7px;
         margin-top: -11px;
     }
 
@@ -323,7 +323,7 @@ section .txt-topo {
     /* ESTILOS SOMENTE PARA NOTEBOOKS */
     header h1 {
         font-size: 3rem;
-        margin-left: -100px;
+        margin-left: 0vw;
 
     }
 
@@ -333,8 +333,7 @@ section .txt-topo {
 
     header nav ul {
         list-style: none;
-        display: block;
-        padding-left: 55vh;
+        margin: auto;
         margin-top: -10px;
     }
 
@@ -366,7 +365,7 @@ section .txt-topo {
 
     .txt-topo h2 {
         font-size: 2rem;
-        margin-left: 45%;
+        margin-left: 50%;
         margin-top: -24px;
         line-height: 10px;
     }
@@ -381,12 +380,25 @@ section .txt-topo {
     }
 
     .txt-topo .button {
-        width: 22%;
-        height: 22px;
+        width: 12vw;
+        height: 7vh;
+
     }
 
     .button span {
         font-size: 1rem;
+    }
+
+    button.prev {
+        margin-left: -5px;
+        ;
+        margin-top: -11px;
+    }
+
+    /* Botão da esquerda */
+    button.next {
+        margin-right: -19px;
+        margin-top: -11px;
     }
 
     .headline-sobre {
@@ -406,6 +418,8 @@ section .txt-topo {
 
     /* outros ajustes específicos aqui... */
 }
+
+/*Fim media queries*/
 
 /*PROPORÇÃO DA IMG*/
 .content {
@@ -715,14 +729,14 @@ section .txt-topo {
 .titulo-servicos h1 {
     color: var(--color-black);
     width: 50%;
-    font-size: 8vw;
+    font-size: clamp(4.5rem, 3vw, 2.5rem);
     font-weight: lighter;
     font-family: var(--font-grande);
 }
 
 .descricao-servicos {
     width: 50%;
-    font-size: 2rem;
+    font-size: 1rem;
     text-align: right;
     line-height: 1.4;
     letter-spacing: 1.5px;
@@ -793,7 +807,7 @@ section .txt-topo {
 
 .card-titulo {
     width: 68%;
-    font-size: clamp(0.8rem, 2.5vw + .4rem, 2rem);
+    font-size: clamp(1.5vw + .4rem, 1.25rem);
     font-family: var(--font-pequena);
     font-weight: normal;
 
@@ -875,7 +889,7 @@ animation: flutuar 1.5s ease-in-out infinite alternate;
 
 .text-headline-skills h2 {
     font-family: var(--font-grande);
-    font-size: 3rem;
+    font-size: clamp(2rem, 2.5vw, 1.75rem);
 }
 
 .text-headline-skills h2 span {
@@ -883,7 +897,7 @@ animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
 .text-headline-skills p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--color-gray2);
     font-weight: 500;
     line-height: 1.4;
@@ -909,18 +923,18 @@ animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
 .box-skill i {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--color-white);
 }
 
 .box-skill h3 {
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     color: #ff9100;
 }
 
 .box-skill p {
     color: var(--color-gray2);
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     font-weight: 500;
     line-height: 1.4;
 }
@@ -938,18 +952,18 @@ animation: flutuar 1.5s ease-in-out infinite alternate;
 }
 
 .box-skills i {
-    font-size: 4rem;
+    font-size: 2.5rem;
     color: var(--color-white);
 }
 
 .box-skills h3 {
-    font-size: 1.8rem;
+    font-size: 1.25rem;
     color: #ff9100;
 }
 
 .box-skills p {
     color: var(--color-gray2);
-    font-size: 1.2rem;
+    font-size: 0.95rem;
     font-weight: 500;
     line-height: 1.4;
 }
@@ -1168,7 +1182,7 @@ button.next {
 .titulo-contato h1 {
     color: var(--color-black);
     width: 50%;
-    font-size: 8vw;
+    font-size: clamp(4rem, 3vw, 2.5rem);
     font-weight: lighter;
     font-family: var(--font-grande);
 }
@@ -1182,7 +1196,7 @@ button.next {
 .descricao-contato a {
     text-decoration: none;
     color: var(--color-black);
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 1.5px;
     line-height: 1.4;
     font-weight: bold;
@@ -1212,11 +1226,11 @@ button.next {
 }
 
 .formulario-contato h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .formulario-contato p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--color-gray1);
     font-weight: 500;
     line-height: 1.4;
@@ -1239,7 +1253,7 @@ button.next {
     outline: none;
     border: 2px solid rgba(128, 128, 128, 0.5);
     padding: 1.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .form textarea {
@@ -1249,7 +1263,7 @@ button.next {
     outline: none;
     border: 2px solid rgba(128, 128, 128, 0.5);
     font-family: var(--font-pequena);
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 1.5rem 1rem;
 }
 

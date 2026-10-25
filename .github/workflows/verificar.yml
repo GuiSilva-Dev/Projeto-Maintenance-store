@@ -1,0 +1,19 @@
+name: Verificar site
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validar HTML
+        run: npx --yes html-validate@8.18.2 index.html
+      - name: Verificar links, arquivos e imagens
+        run: node scripts/verificar-site.js

@@ -1,35 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#ff7b0094">
-    <meta name="description" content="A HDMR AR é especialista em assistência técnica e conserto de eletrodomésticos como máquinas de lavar, geladeiras, micro-ondas e ar-condicionado. Qualidade e eficiência.">
-    <meta name="keywords" content="assistência técnica, conserto de geladeira, conserto de máquina de lavar, manutenção de ar condicionado, conserto de tv, Hdmr Ar, conserto de eletrodomésticos">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="A HDMR AR é especialista em assistência técnica e conserto de eletrodomésticos como máquinas de lavar, geladeiras, micro-ondas e ar-condicionado em Itapevi - SP. Qualidade e eficiência.">
     <meta name="author" content="HDMR AR">
     <meta property="og:title" content="HDMR AR - Assistência Técnica Especializada">
-    <meta property="og:description" content="Conserto rápido, eficiente e com qualidade garantida. Especialistas em manutenção de eletrodomésticos na sua região.">
+    <meta property="og:description" content="Conserto rápido, eficiente e com qualidade garantida. Especialistas em manutenção de eletrodomésticos em Itapevi e região.">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
 
-    <title>HDMR AR - Assistência Técnica Especializada</title>
-    <link rel="icon" href="img/2-Photoroom (2).png">
+    <title>HDMR AR - Assistência Técnica Especializada em Itapevi</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <!--Fonte Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
     <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsividade.css">
 
+    <!--Dados estruturados para SEO local-->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "HDMR AR",
+        "description": "Assistência técnica e conserto de máquinas de lavar, geladeiras, micro-ondas, ar-condicionado, televisões e câmaras frias.",
+        "telephone": "+55-11-97861-3197",
+        "email": "marcelosardinha2021@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Itapevi",
+            "addressRegion": "SP",
+            "addressCountry": "BR"
+        },
+        "areaServed": { "@type": "City", "name": "Itapevi" },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+        }
+    }
+    </script>
 </head>
-<header>
-    <div id="topo" class="logo">
-        <img src="img/5-Photoroom.png" alt="LOGOTIPO" loading="lazy">
-    </div><!-- fim logo-->
-    <div class="topo">
-        <h1>HDMR AR</h1>
-    </div><!-- fim h1-->
-    <div class="menu-desktop">
-        <nav class="menu-topo">
+
+<body>
+    <header>
+        <a id="topo" class="logo" href="#inicio">
+            <img src="img/logo.webp" alt="HDMR AR - Assistência técnica" width="252" height="231" fetchpriority="high">
+        </a><!-- fim logo-->
+        <div class="topo">
+            <p class="marca">HDMR AR</p>
+        </div><!-- fim marca-->
+        <nav class="menu-desktop" aria-label="Menu principal">
             <ul class="nav-menu">
                 <li><a href="#inicio">INÍCIO</a></li>
                 <li><a href="#servicos">SERVIÇOS</a></li>
@@ -38,90 +65,75 @@
             </ul>
         </nav>
         <div class="btn-top">
-            <a href="mailto:marcelosardinha2021@gmail.com" target="_blank"><button>CONTATO</button></a>
+            <a class="btn btn--primary" href="#contato">CONTATO</a>
         </div><!-- fim botao-->
-    </div><!-- fim menu-desktop-->
 
-    <div class="btn-abrir-menu" id="btn">
-        <i class="bi bi-list"></i>
-    </div>
-    <div class="menu-mobile" id="menu-mobile">
-        <div class="btn-fechar">
-            <i class="bi bi-x-lg"></i>
-        </div><!--btn fechar-->
+        <button type="button" class="btn-abrir-menu" id="btn" aria-label="Abrir menu" aria-controls="menu-mobile" aria-expanded="false">
+            <i class="bi bi-list" aria-hidden="true"></i>
+        </button>
+        <div class="menu-mobile" id="menu-mobile">
+            <button type="button" class="btn-fechar" aria-label="Fechar menu">
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
+            </button><!--btn fechar-->
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">INÍCIO</a></li>
-                <li><a href="#servicos">SERVIÇOS</a></li> 
-                <li><a href="#skills">SOBRE A EMPRESA</a></li>
-                <li><a href="#contato">CONTATO</a></li>
-            </ul>
-        </nav>
-        <div class="img-menu">
-            <img src="img/2-Photoroom (2).png" alt="" loading="lazy">
-        </div>
-    </div><!--menu mobile-->
-    <div class="overlay-menu" id="overlay-menu"></div>
-</header>
+            <nav aria-label="Menu mobile">
+                <ul>
+                    <li><a href="#inicio">INÍCIO</a></li>
+                    <li><a href="#servicos">SERVIÇOS</a></li>
+                    <li><a href="#skills">SOBRE A EMPRESA</a></li>
+                    <li><a href="#contato">CONTATO</a></li>
+                </ul>
+            </nav>
+            <div class="img-menu">
+                <img src="img/icone-hdmr.webp" alt="" width="252" height="231" loading="lazy">
+            </div>
+        </div><!--menu mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+    </header>
 
-<body>
     <main>
     <!--Botão voltar ao topo-->
-    <div id="backToTop" class="fixed-button">
-        <i class="bi bi-chevron-up"></i>
-    </div>
-    <!--Botão WhatsApp-->
-    <div id="whatsappButton" class="fixed-button">
-        <i class="bi bi-whatsapp"></i>
+    <button type="button" id="backToTop" class="fixed-button" aria-label="Voltar ao topo">
+        <i class="bi bi-chevron-up" aria-hidden="true"></i>
+    </button>
+    <!--Atalhos: WhatsApp e redes sociais-->
+    <div class="apps" id="apps">
+        <ul class="apps__lista" id="apps-lista">
+            <!-- TROCAR: link real do perfil no Facebook -->
+            <li><a class="apps__item apps__item--facebook" href="https://www.facebook.com/SEU-PERFIL"
+                    target="_blank" rel="noopener"><span class="apps__rotulo">Facebook</span><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+            <!-- TROCAR: link real do perfil no TikTok -->
+            <li><a class="apps__item apps__item--tiktok" href="https://www.tiktok.com/@SEU-PERFIL"
+                    target="_blank" rel="noopener"><span class="apps__rotulo">TikTok</span><i class="bi bi-tiktok" aria-hidden="true"></i></a></li>
+            <li><a class="apps__item apps__item--whatsapp" href="https://wa.me/5511978613197?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+                    target="_blank" rel="noopener"><span class="apps__rotulo">WhatsApp</span><i class="bi bi-whatsapp" aria-hidden="true"></i></a></li>
+        </ul>
+        <button type="button" class="apps__botao" id="apps-botao" aria-expanded="false" aria-controls="apps-lista"
+            aria-label="Abrir WhatsApp e redes sociais">
+            <i class="bi bi-chat-dots-fill apps__icone-abrir" aria-hidden="true"></i>
+            <i class="bi bi-x-lg apps__icone-fechar" aria-hidden="true"></i>
+        </button>
     </div>
 
     <section id="inicio" class="topo-site">
-        <div class="fab-container">
-            <button class="fab" onclick="toggleMenu()">
-                <i class="bi bi-menu-button-wide"></i>
-
-                <div class="social-buttons">
-                    <div class="icon1"><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></div>
-                    <div class="icon2"><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></div>
-                    <div class="icon3"> <a href="#" target="_blank"><i class="bi bi-tiktok"></i></a></div>
-                    <div class="icon4"><a href="#" target="_blank"><i class="bi bi-camera-reels"></i></a></div>
-                    <div class="icon5"><a href="http://wa.me/+5511978613197" target="_blank"><i
-                                class="bi bi-whatsapp"></i></a></div>
-                </div>
-            </button>
-        </div>
-        <!--Slide Sobre-->
-       <!-- <div class="headline-sobre" data-aos="fade-up" data-aos-duration="1000">
-            <div class="headline-scroll" id="headline-scroll">
-                <span class="bold">Assistência</span>
-                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
-                <span class="light">Técnica</span>
-                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
-                <span class="bold"> Assistência</span>
-                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
-                <span class="light">Técnica</span>
-                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
-                <span class="bold">Assistência</span>
-                <span class="divisor"><i class="bi bi-circle-fill"></i></span>
-                <span class="light">Técnica</span>
-                <span class="diviso"><i class="bi bi-circle-fill"></i></span>
-            </div>
-        </div>-->
-
         <div class="interface">
             <div class="flex">
                 <div class="txt-topo">
-                    <h1>Conserto rápido,<h2>eficiente e com</h2>
-                        <h3>qualidade garantida<span>.</span></h3>
+                    <h1>
+                        <span class="titulo-linha1">Conserto rápido,</span>
+                        <span class="titulo-linha2">eficiente e com</span>
+                        <span class="titulo-linha3">qualidade garantida<span class="ponto">.</span></span>
                     </h1>
-                    <p class="post-summary">Bem-vindo ao nosso serviço especializado em manutenção e reparo!.</p>
+                    <p class="post-summary">Bem-vindo ao nosso serviço especializado em manutenção e reparo!</p>
                     <p class="post-content">Com mais de 10 anos de experiência no mercado, sou um profissional dedicado
                         e qualificado, especializado em consertos de eletrodomésticos. Sempre oferecendo soluções
                         rápidas, seguras e eficientes.</p>
 
-                    <a class="button" href="http://wa.me/+5511978613197" target="_blank"><span>Fale Comigo
-                            <i>&rarr;</i></span></a>
+                    <div class="hero-acoes">
+                        <a class="btn btn--primary btn--ripple" href="https://wa.me/5511978613197?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+                            target="_blank" rel="noopener">Fale Comigo <span class="btn__seta" aria-hidden="true">&rarr;</span></a>
+                        <a class="btn btn--outline" href="#servicos">Ver serviços</a>
+                    </div>
 
                 </div><!-- fim txt-topo-->
             </div><!-- fim flex-->
@@ -136,19 +148,19 @@
                 <input class="input" type="radio" name="slid" id="slid5">
 
                 <div class="slide s1">
-                    <img src="img/img-conserto-geladeira.jpg" alt="Conserto e manutenção de geladeira" loading="lazy">
+                    <img src="img/hero-geladeira.webp" alt="Conserto e manutenção de geladeira" width="1200" height="628" fetchpriority="high">
                 </div>
                 <div class="slide">
-                    <img src="img/Empresa-de-Conserto-de-Ar-Condicionado-em-Sao-Paulo.jpg" alt="Especialistas em conserto de ar-condicionado" loading="lazy">
+                    <img src="img/hero-ar-condicionado.webp" alt="Especialistas em conserto de ar-condicionado" width="1200" height="800" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="img/manutencao-Maquina-de-Lavar.jpg" alt="Manutenção técnica de máquina de lavar" loading="lazy">
+                    <img src="img/hero-maquina-de-lavar.webp" alt="Manutenção técnica de máquina de lavar" width="600" height="600" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="img/depositphotos_138897782-stock-photo-electrician-checking-television.jpg" alt="Técnico verificando televisão" loading="lazy">
+                    <img src="img/hero-televisao.webp" alt="Técnico verificando televisão" width="600" height="400" loading="lazy">
                 </div>
                 <div class="slide">
-                    <img src="img/images.jpeg" alt="Técnico realizando assistência em eletrodomésticos" loading="lazy">
+                    <img src="img/hero-eletrodomesticos.webp" alt="Técnico realizando assistência em eletrodomésticos" width="269" height="188" loading="lazy">
                 </div>
             </div>
         </div>
@@ -164,193 +176,169 @@
     <!--Serviços-->
     <section id="servicos" class="servicos">
         <div class="container-servicos">
-            <div class="headline-servicos" data-aos="fade-up" data-aos-duration="1000">
+            <div class="headline-servicos">
                 <div class="titulo-servicos">
-                    <h1>Serviços</h1>
-                </div>
-                <div class="descricao-servicos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <!--<p>Com uma abordagem ética e estratégica, ato com dedicação e expertise para proteger os direitos dos meus clientes, oferecendo soluções jurídicas personalizadas e práticas em todas as fases</p> -->
+                    <h2>Serviços</h2>
                 </div>
             </div>
             <div class="servicos-cards">
                 <!--Serviço 1-->
-                <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
+                <div class="card-servicos-left">
                     <div class="card-titulo">
-                        <h1>Conserto de Máquinas de Lavar.</h1>
+                        <h3>Conserto de Máquinas de Lavar</h3>
                     </div>
-                    <div class="card-icon"><img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.jpg" alt="Serviço de conserto de máquinas de lavar" loading="lazy"></div>
+                    <div class="card-icon"><img src="img/servico-maquina-de-lavar.webp" alt="" width="800" height="800" loading="lazy"></div>
                 </div>
                 <!--Serviço 2-->
-                <div class="card-servicos" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                <div class="card-servicos">
                     <div class="card-titulo">
-                        <h1>Conserto de Geladeiras.</h1>
+                        <h3>Conserto de Geladeiras</h3>
                     </div>
-                    <div class="card-icon"><img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.jpg" alt="Serviço de conserto de geladeiras" loading="lazy"></div>
+                    <div class="card-icon"><img src="img/servico-geladeira.webp" alt="" width="800" height="800" loading="lazy"></div>
                 </div>
                 <!--Serviço 3-->
-                <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <div class="card-servicos-left">
                     <div class="card-titulo">
-                        <h1>Conserto de Micro-Ondas.</h1>
+                        <h3>Conserto de Micro-ondas</h3>
                     </div>
-                    <div class="card-icon"><img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.jpg" alt="Serviço de conserto de micro-ondas" loading="lazy"></div>
+                    <div class="card-icon"><img src="img/servico-micro-ondas.webp" alt="" width="800" height="800" loading="lazy"></div>
                 </div>
                 <!--Serviço 4-->
-                <div class="card-servicos" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+                <div class="card-servicos">
                     <div class="card-titulo">
-                        <h1>Conserto de Ar-Condicionado.</h1>
+                        <h3>Conserto de Ar-Condicionado</h3>
                     </div>
-                    <div class="card-icon"><img src="img/27693-1.png" alt="Serviço de conserto de ar-condicionado" loading="lazy"></div>
+                    <div class="card-icon"><img src="img/servico-ar-condicionado.webp" alt="" width="800" height="414" loading="lazy"></div>
                 </div>
                 <!--Serviço 5-->
-                <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
+                <div class="card-servicos-left">
                     <div class="card-titulo">
-                        <h1>Conserto de Televisões.</h1>
+                        <h3>Conserto de Televisões</h3>
                     </div>
-                    <div class="card-icon"><img src="img/tela-de-tv-realista-painel-de-lcd-de-televisao-moderna-com-partida-de-futebol_97886-737.jpg" alt="Serviço de conserto de televisões" loading="lazy"></div>
+                    <div class="card-icon"><img src="img/servico-televisao.webp" alt="" width="514" height="334" loading="lazy"></div>
                 </div>
                 <!--Serviço 6-->
-                <div class="card-servicos" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+                <div class="card-servicos">
                     <div class="card-titulo">
-                        <h1>Conserto de câmara fria</h1>
+                        <h3>Conserto de Câmara Fria</h3>
                     </div>
-                    <div class="card-icon"><img src="img/745_02.png" alt="Serviço de conserto de aparelhos de som" loading="lazy"></div>
-                </div>  
+                    <div class="card-icon"><img src="img/servico-camara-fria.webp" alt="" width="800" height="800" loading="lazy"></div>
+                </div>
             </div>
         </div>
-       <!-- <div class="box-servicos">
-            <div class="box" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 1">
-            </div>
-            <div class="box" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp" alt="">
-            </div>
-            <div class="box" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="">
-            </div>
-            <div class="box" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                <img src="img/27693-1.png" alt="">
-            </div>-->
     </section>
     <!--Fim Serviços-->
     <!--Skills-->
     <section id="skills" class="skills">
-        <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container-skills">
             <div class="headline-skills">
-                <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="text-headline-skills">
                     <h2>Sobre a <span>Empresa</span></h2>
-                    <p>Não contrate outra empresa sem fazer um orçamento conosco, temos o melhor custo benefício para
-                        você!.</p>
+                    <p>Não contrate outra empresa sem fazer um orçamento conosco, temos o melhor custo-benefício para
+                        você!</p>
                 </div>
             </div>
             <div class="conteudo-skills">
                 <div class="slider">
-                    <button
-                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <button type="button" class="prev" aria-label="Imagem anterior">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
                     <div class="slides-skills">
                         <div class="slide-skills">
-                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
-                                alt="Imagem 1" loading="lazy">
+                            <img src="img/servico-geladeira.webp" alt="Geladeira" width="800" height="800" loading="lazy">
                         </div>
                         <div class="slide-skills">
-                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2" loading="lazy">
+                            <img src="img/servico-maquina-de-lavar.webp" alt="Máquina de lavar" width="800" height="800" loading="lazy">
                         </div>
                         <div class="slide-skills">
-                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3" loading="lazy">
+                            <img src="img/servico-micro-ondas.webp" alt="Micro-ondas" width="800" height="800" loading="lazy">
                         </div>
                     </div>
-                    <button class="next">&#10095;</button>
-                    <!-- Navegação 2 -->
+                    <button type="button" class="next" aria-label="Próxima imagem">&#10095;</button>
                 </div>
 
                 <div class="slider">
-                    <button
-                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <button type="button" class="prev" aria-label="Imagem anterior">&#10094;</button>
                     <div class="slides-skills">
                         <div class="slide-skills">
-                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
-                                alt="Imagem 1" loading="lazy">
+                            <img src="img/servico-geladeira.webp" alt="Geladeira" width="800" height="800" loading="lazy">
                         </div>
                         <div class="slide-skills">
-                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2" loading="lazy">
+                            <img src="img/servico-maquina-de-lavar.webp" alt="Máquina de lavar" width="800" height="800" loading="lazy">
                         </div>
                         <div class="slide-skills">
-                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3" loading="lazy">
+                            <img src="img/servico-micro-ondas.webp" alt="Micro-ondas" width="800" height="800" loading="lazy">
                         </div>
                     </div>
-                    <button class="next">&#10095;</button>
+                    <button type="button" class="next" aria-label="Próxima imagem">&#10095;</button>
                 </div>
 
                 <div class="slider">
-                    <button
-                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
+                    <button type="button" class="prev" aria-label="Imagem anterior">&#10094;</button>
                     <div class="slides-skills">
                         <div class="slide-skills">
-                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
-                                alt="Imagem 1" loading="lazy">
+                            <img src="img/servico-geladeira.webp" alt="Geladeira" width="800" height="800" loading="lazy">
                         </div>
                         <div class="slide-skills">
-                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2" loading="lazy">
+                            <img src="img/servico-maquina-de-lavar.webp" alt="Máquina de lavar" width="800" height="800" loading="lazy">
                         </div>
                         <div class="slide-skills">
-                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3" loading="lazy">
+                            <img src="img/servico-micro-ondas.webp" alt="Micro-ondas" width="800" height="800" loading="lazy">
                         </div>
                     </div>
-                    <button class="next">&#10095;</button>
-                </div>
-                <div class="slider">
-                    <button
-                        class="prev">&#10094;</button><!--btn fora da div para nao ir para o lado junto com as img-->
-                    <div class="slides-skills">
-                        <div class="slide-skills">
-                            <img src="img/01_01_Refrigerator_IB7B_Front_Electrolux_Portuguese-1000x1000.webp"
-                                alt="Imagem 1" loading="lazy">
-                        </div>
-                        <div class="slide-skills">
-                            <img src="img/Maquina-de-Lavar-CONSUL-CWH12BB-12Kg-Branca-2.webp" alt="Imagem 2" loading="lazy">
-                        </div>
-                        <div class="slide-skills">
-                            <img src="img/Microwave_ME23P_Front_Electrolux_portuguese-1000x1000.webp" alt="Imagem 3" loading="lazy">
-                        </div>
-                    </div>
-                    <button class="next">&#10095;</button>
+                    <button type="button" class="next" aria-label="Próxima imagem">&#10095;</button>
                 </div>
 
-                <div class="box-skill" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="slider">
+                    <button type="button" class="prev" aria-label="Imagem anterior">&#10094;</button>
+                    <div class="slides-skills">
+                        <div class="slide-skills">
+                            <img src="img/servico-geladeira.webp" alt="Geladeira" width="800" height="800" loading="lazy">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/servico-maquina-de-lavar.webp" alt="Máquina de lavar" width="800" height="800" loading="lazy">
+                        </div>
+                        <div class="slide-skills">
+                            <img src="img/servico-micro-ondas.webp" alt="Micro-ondas" width="800" height="800" loading="lazy">
+                        </div>
+                    </div>
+                    <button type="button" class="next" aria-label="Próxima imagem">&#10095;</button>
+                </div>
+
+                <div class="box-skill">
                     <h3>Serviços</h3>
                     <p>
                         Todos os serviços são executados somente com a autorização do proprietário ou pessoa autorizada,
                         mediante assinatura da ordem de serviço.</p>
                 </div>
-                <div class="box-skill" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="box-skill">
                     <h3>Orçamento</h3>
                     <p>Serão feitos no local de visita. Será cobrada taxa de devolução de produtos retirados para
                         diagnósticos no caso de reprovação do orçamento. O valor cobrado depende do aparelho ou defeito.
                     </p>
                 </div>
-                <div class="box-skill" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="box-skill">
                     <h3>Garantia dos Serviços</h3>
                     <p>A garantia será relativa ao serviço e às peças substituídas. A cobertura será para as peças e os
                         serviços executados. O tempo de garantia mínima é de três meses e o máximo, de 6 meses.</p>
                 </div>
-                <div class="box-skill" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="box-skill">
                     <h3>Processo de entrega</h3>
                     <p>Todo produto será entregue mediante pagamento dos serviços executados. Na falta do pagamento, o
                         produto retornará para empresa e será adicionado custo de frete para uma nova entrega.</p>
                 </div>
-                <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                <div class="box-skill box-skill--passo">
                     <h3>PASSO 1.</h3>
                     <p>Preencha o formulário de solicitação de serviço com seus dados ou entre em contato pelo WhatsApp.</p>
                 </div>
-                <div class="box-skills" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="box-skill box-skill--passo">
                     <h3>PASSO 2.</h3>
                     <p>Nós entramos em contato para levantar mais detalhes sobre o conserto e fazer o agendamento da
                         visita técnica.</p>
                 </div>
-                <div class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                <div class="box-skill box-skill--passo">
                     <h3>PASSO 3.</h3>
                     <p>Você recebe o orçamento do serviço e se aprovado, já agenda o conserto.</p>
                 </div>
-                <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="box-skill box-skill--passo">
                     <h3>PASSO 4.</h3>
                     <p>Realização do conserto e recebimento de pagamento.</p>
                 </div>
@@ -362,37 +350,48 @@
 
     <!--Contato-->
     <section id="contato" class="contato">
-        <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
-            <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
+        <div class="container-contato">
+            <div class="headline-contato">
                 <div class="titulo-contato">
-                    <h1>Contato</h1>
+                    <h2>Contato</h2>
                 </div>
                 <div class="descricao-contato">
                     <ul class="lista-contato">
-                        <li><a href="#">WhatsApp: (55) 11 97861-3197</a></li>
-                        <li><a href="#">marcelosardinha2021@gmail.com</a></li>
-                        <li><a href="#">Atendemos todos os dias</a></li>
-                        <!--<li><a href="#">Endereço Completo</a></li>-->
+                        <li><a href="https://wa.me/5511978613197?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento."
+                                target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i> WhatsApp: (11) 97861-3197</a></li>
+                        <li><a href="tel:+5511978613197"><i class="bi bi-telephone" aria-hidden="true"></i>&nbsp;Ligar:&nbsp;(11)&nbsp;97861&#8209;3197</a></li>
+                        <li><a href="mailto:marcelosardinha2021@gmail.com">marcelosardinha2021@gmail.com</a></li>
+                        <li>Atendemos todos os dias</li>
                     </ul>
                 </div>
             </div>
-            <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="400">
+            <div class="conteudo-contato">
                 <div class="formulario-contato">
-                    <h2>Entre em contato</h2>
-                    <p>Precisa de manutenção para o seu equipamento ou sistema? A Hdmr Ar está pronta para ajudar! Preencha o
-                        formulário abaixo com as informações necessárias e nossa equipe entrará em contato para fornecer
-                        o suporte que você precisa.!</p>
-                    <form class="form" action="https://formsubmit.co/marcelosardinha2021@gmail.com" method="POST"
-                        target="_blank" />
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
-                    <input type="phone" name="telefone" id="telefone" placeholder="(11) 22222-2222">
-                    <input type="email" name="email" id="email" placeholder="Seu melhor email">
-                    <textarea name="mensagem" id="mensagem" placeholder="Descreva o seu caso aqui..."></textarea>
-                    <button class="btn-enviar" target="_blank">Enviar</button>
+                    <h3>Entre em contato</h3>
+                    <p>Precisa de manutenção para o seu equipamento? A HDMR AR está pronta para ajudar! Preencha o
+                        formulário abaixo com as informações necessárias e entraremos em contato para fornecer
+                        o suporte que você precisa.</p>
+                    <form class="form" id="form-contato" action="https://formsubmit.co/marcelosardinha2021@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Novo pedido de orçamento pelo site">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" id="form-next" value="">
+                        <!--honeypot anti-spam: humanos não veem este campo-->
+                        <input type="text" name="_honey" class="campo-oculto" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <label class="sr-only" for="nome">Nome completo</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" autocomplete="name" required>
+                        <label class="sr-only" for="telefone">Telefone ou WhatsApp</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(11) 91234-5678" autocomplete="tel" inputmode="tel" required>
+                        <label class="sr-only" for="email">E-mail (opcional)</label>
+                        <input type="email" name="email" id="email" placeholder="Seu melhor e-mail (opcional)" autocomplete="email">
+                        <label class="sr-only" for="mensagem">Descreva o seu caso</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Descreva o seu caso aqui..." required></textarea>
+                        <button type="submit" class="btn btn--primary btn-enviar">Enviar <span class="btn__seta" aria-hidden="true">&rarr;</span></button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
                     </form>
                 </div>
-                <div class="logo-contato" data-aos="fade-up" data-aos-delay="600">
-                    <img src="img/quanto-custa-conserto-maquina-de-lavar.jpg" alt="foto ilustrativa de conserto de máquina de lavar" loading="lazy">
+                <div class="logo-contato">
+                    <img src="img/contato-maquina-de-lavar.webp" alt="Técnico consertando máquina de lavar" width="799" height="533" loading="lazy">
                 </div>
             </div>
         </div>
@@ -404,11 +403,11 @@
     <footer class="footer" id="footer">
         <div class="container-footer">
             <div class="footer-column logo-column">
-                <img src="img/5-Photoroom.png" alt="Logo da empresa" loading="lazy">
+                <img src="img/logo.webp" alt="HDMR AR" width="252" height="231" loading="lazy">
             </div>
             <div class="footer-column menu-column">
-                <nav class="footer-nav">
-                    <a href="#topo">Início</a>
+                <nav class="footer-nav" aria-label="Links do rodapé">
+                    <a href="#inicio">Início</a>
                     <a href="#servicos">Serviços</a>
                     <a href="#skills">Sobre a Empresa</a>
                     <a href="#contato">Contato</a>
@@ -416,27 +415,17 @@
             </div>
             <div class="footer-column social-column">
                 <ul class="social-links">
-                   <!--<li><a href="#"><i class="bi bi-instagram" target="_blank"></i> Instagram</a></li>
-                    <li><a href="#"><i class="bi bi-camera-reels" target="_blank"></i>Kwai</a></li>
-                    <li><a href="#"><i class="bi bi-facebook" target="_blank"></i> Facebook</a></li>
-                    <li><a href="#"><i class="bi bi-tiktok" target="_blank"></i> TikTok</a></li>-->
-                    <li><a href="#"><i class="bi bi-geo-alt"></i>Itapevi - SP </a></li>
+                    <li><a href="https://www.google.com/maps/search/?api=1&amp;query=Itapevi%2C+SP" target="_blank" rel="noopener"><i class="bi bi-geo-alt" aria-hidden="true"></i>Itapevi - SP</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-column credits-column">
-            <p>&copy; 2025 Todos os direitos reservados.</p>
+            <p>&copy; <span id="ano">2026</span> HDMR AR. Todos os direitos reservados.</p>
             <p>Desenvolvido por GS│Dev.</p>
         </div>
     </footer>
     <!--Fim Footer-->
-    <script src="scrollX.js"></script>
-    <script src="button.js"></script>
-    <script src="WhattsBt.js"></script>
-    <script src="SlideSobre.js"></script>
-    <script src="btmobile.js"></script>
-    <script src="rolagem.js"></script>
-    <script src="SliderSwipe.js"></script>
+    <script src="main.js" defer></script>
 
 </body>
 

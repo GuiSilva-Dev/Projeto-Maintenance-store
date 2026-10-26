@@ -1,0 +1,20 @@
+{
+  "name": "Maintenance-store-main",
+  "version": "2.0.0",
+  "private": "true",
+  "description": "Landing page da Hdmr-ar - assistência técnica e manutenção de equipamentos eletrônicos e eletromecânicos.",
+  "standard": {
+    "env": [
+      "browser"
+    ]
+  },
+  "scripts": {
+    "start": "npx serve .",
+    "verificar": "node scripts/verificar-site.js",
+    "test": "node scripts/verificar-site.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GuiSilva-Dev/Maintenance-store.git"
+  }
+}

@@ -80,6 +80,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* remove o destaque azul padrão ao tocar em links/botões no mobile */
+    -webkit-tap-highlight-color: transparent;
 }
 
 img {
@@ -487,8 +489,16 @@ input[type="radio"] {
 }
 
 @keyframes apps-pulso {
-    0% { transform: scale(1); opacity: .7; }
-    70%, 100% { transform: scale(1.5); opacity: 0; }
+    0% {
+        transform: scale(1);
+        opacity: .7;
+    }
+
+    70%,
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
 }
 
 .apps__botao i {
@@ -547,9 +557,17 @@ input[type="radio"] {
 }
 
 /* entrada em cascata: o item mais perto do botão aparece primeiro */
-.apps__lista li:nth-child(3) .apps__item { transition-delay: 0ms; }
-.apps__lista li:nth-child(2) .apps__item { transition-delay: 50ms; }
-.apps__lista li:nth-child(1) .apps__item { transition-delay: 100ms; }
+.apps__lista li:nth-child(3) .apps__item {
+    transition-delay: 0ms;
+}
+
+.apps__lista li:nth-child(2) .apps__item {
+    transition-delay: 50ms;
+}
+
+.apps__lista li:nth-child(1) .apps__item {
+    transition-delay: 100ms;
+}
 
 .apps.aberto .apps__item {
     opacity: 1;
@@ -590,8 +608,13 @@ input[type="radio"] {
     box-shadow: var(--shadow-soft);
 }
 
-.apps__item--whatsapp { --app-cor: var(--color-whatsapp); }
-.apps__item--facebook { --app-cor: #1877f2; }
+.apps__item--whatsapp {
+    --app-cor: var(--color-whatsapp);
+}
+
+.apps__item--facebook {
+    --app-cor: #1877f2;
+}
 
 /* TikTok: fundo preto com o "glitch" ciano/rosa da marca no ícone */
 .apps__item--tiktok i {
@@ -633,9 +656,14 @@ input[type="radio"] {
     transition: opacity 0.5s ease, visibility 0.5s ease, background-color var(--dur-base) var(--ease), color var(--dur-base) var(--ease);
 }
 
-#backToTop:hover {
+#backToTop:focus:hover {
     background-color: var(--color-brand-500);
     color: var(--color-on-brand);
+}
+
+#backToTop:focus:hover {
+    background-color: rgba(0, 0, 0, 0.85);
+    color: var(--color-brand-500);
 }
 
 .fixed-button i {
